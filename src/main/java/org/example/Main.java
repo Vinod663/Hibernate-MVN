@@ -36,6 +36,10 @@ public class Main {
 
 
     }
+    // hibernate boostrap
+    //create session factory
+    //setup database connection
+    //entity class map to database
 
 
 

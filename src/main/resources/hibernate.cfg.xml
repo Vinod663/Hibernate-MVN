@@ -6,13 +6,21 @@
   <session-factory>
     <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate_practice?createDatabaseIfNotExist=true</property>
+    <!--hibernate_practice-->
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">Ijse@1234</property>
 
     <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
     <property name="hibernate.show_sql">true</property>
     <!--<property name="hibernate.hbm2ddl.auto">create</property>-->
-    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.hbm2ddl.auto">update</property> //db schema will be updated if needed
+        <!--//create- create schema
+        //update- schema
+        //create-drop - create schema and drop schema-->
+        <!--validate- ape entity and database eka match wenawada balanawa, match wen nathnm exception ekk throw wenawa
+        meyagen effect ekk wen na mukuth deka match wenawada kiyalai balanne(validate schema-if invalid throw exception)-->
+
+
     <!--<property name="connection.url"/>
     <property name="connection.driver_class"/>-->
     <!-- <property name="connection.username"/> -->
